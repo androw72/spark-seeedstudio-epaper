@@ -1,6 +1,8 @@
 # spark-seeedstudio-epaper
 A seeed-studio epaper library ported to spark-core
 
+SD card library for spark: https://github.com/technobly/SparkCore-SD  
+
 //2015-01-27 Spark core pins  
 define Pin_TEMPERATURE   A0  
 define Pin_PANEL_ON      D2  
