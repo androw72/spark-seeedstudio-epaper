@@ -389,7 +389,9 @@ void EPD_Class::frame_data( const uint8_t *image, EPD_stage stage)
 {
 	for (uint8_t line = 0; line < this->lines_per_display ; ++line) 
     {
-		this->line(line, &image[line * this->bytes_per_line], 0, true, stage);
+		//this->line(line, &image[line * this->bytes_per_line], 0, true, stage);
+            // progmem read false - spark core  
+            this->line(line, &image[line * this->bytes_per_line], 0, false, stage);
 	}
 }
 

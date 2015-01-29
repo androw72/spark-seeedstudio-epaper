@@ -22,7 +22,7 @@
 #include "application.h"
 #include "ePaper.h"
 //#include "GT20L16_drive.h"
-//#include "picture.h"
+#include "picture.h"
 
 // set up variables using the SD utility library functions:
 Sd2Card card;
@@ -56,7 +56,7 @@ void setup()
   Serial.print("\nSeedstudioEpaper...\n");
   EPAPER.begin(EPD_SIZE);
   //EPAPER.clear();
-  //EPAPER.image_flash(IMAGEFILE);
+
   EPAPER.setDirection(DIRNORMAL);                     // set display direction
   eSD.begin(EPD_SIZE); 
 
@@ -71,10 +71,14 @@ void setup()
     EPAPER.drawCircle(150, 50, 10);
     EPAPER.fillCircle(150, 50, 5);  
     EPAPER.drawHorizontalLine(120, 50, 60);
-    EPAPER.drawVerticalLine(150, 20, 60);
+    EPAPER.drawVerticalLine(150, 20, 60); 
   
   EPAPER.display();                                   // display, you can use this function
-  delay(1000);
+  delay(4000);
+  
+  EPAPER.image_flash(IMAGEFILE);
+  delay(2000);
+  //EPAPER.end();
   
 }
 
