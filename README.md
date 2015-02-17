@@ -15,8 +15,11 @@ define Pin_RESET         D6
 define Pin_BUSY          D7  
 
 define Pin_EPD_CS        D0  
-
 define Pin_SD_CS         A2  
-
 define Pin_OE123         D5 //tmp  
-define Pin_STV_IN        A6  
+define Pin_STV_IN        A6 
+
+SPI_CLK                 A3  
+SPI_MISO                A4  
+SPI_MOSI                A5  
+
