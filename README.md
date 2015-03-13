@@ -1,7 +1,10 @@
 # spark-seeedstudio-epaper
-A seeed-studio epaper library ported to spark-core
+A seeed-studio epaper library ported to spark-core. SD [card library](https://github.com/technobly/SparkCore-SD) for spark.   
 
-SD card library for spark: https://github.com/technobly/SparkCore-SD  
+__Compiling with Spark Dev__  
+Download and open the 'spark_dev_work' folder in spark dev and compile.
+
+ 
 
 note! This code is only tested on the repaper development board from adafruit. The seeedstudio epaper shield has a different tempsensor and a added character chip. The code for the tempsensor is altered and a fix value of 25 degrees is therfore used in function 'void ePaper::start()'.
 
