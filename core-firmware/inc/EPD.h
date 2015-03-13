@@ -13,7 +13,8 @@
 // governing permissions and limitations under the License.
 
 // spark core
-#define __AVR_ATmega1280__ 1
+//#define __AVR_ATmega1280__ 1
+#define __AVR_ATmega32U4__
 
 #if !defined(EPD_H)
 #define EPD_H 1

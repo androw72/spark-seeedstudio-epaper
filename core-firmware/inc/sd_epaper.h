@@ -22,7 +22,7 @@
 */
 
 // spark core
-#define __AVR_ATmega1280__ 1
+//#define __AVR_ATmega1280__ 1
 
 
 #ifndef __SD_EPAPER_H__

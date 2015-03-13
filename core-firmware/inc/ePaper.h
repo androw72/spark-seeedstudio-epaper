@@ -21,7 +21,7 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 // spark core
-#define __AVR_ATmega1280__ 1
+//#define __AVR_ATmega1280__ 1
 
 #ifndef __EPAPER_H__
 #define __EPAPER_H__

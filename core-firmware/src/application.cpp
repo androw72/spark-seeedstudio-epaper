@@ -78,7 +78,7 @@ void setup()
   
   EPAPER.image_flash(IMAGEFILE);
   delay(2000);
-  //EPAPER.end();
+  EPAPER.end();
   
 }
 
