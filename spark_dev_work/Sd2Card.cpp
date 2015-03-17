@@ -222,10 +222,12 @@ uint8_t Sd2Card::init(uint8_t sckRateID, uint8_t chipSelectPin) {
   SPI.setBitOrder(MSBFIRST);
 
   if( sckRateID == SPI_FULL_SPEED ){
-    SPI.setClockDivider(SPI_CLOCK_DIV4);
+    //SPI.setClockDivider(SPI_CLOCK_DIV4);
+		SPI.setClockDivider(SPI_CLOCK_DIV32);
   }
   else{
-    SPI.setClockDivider(SPI_CLOCK_DIV8);
+    //SPI.setClockDivider(SPI_CLOCK_DIV8);
+		SPI.setClockDivider(SPI_CLOCK_DIV32);
   }
 
   SPI.begin(chipSelectPin_);
